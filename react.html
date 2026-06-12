@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>React Development | Academy CloudOne</title>
+
+<link rel="stylesheet" href="common.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#222;
+    line-height:1.7;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(135deg,#ffffff,#f7faf9);
+    padding:60px 20px;
+}
+
+.hero-content{
+    max-width:1000px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.hero span{
+    color:#2EAD33;
+}
+
+.hero p{
+    font-size:1.25rem;
+    color:#666;
+    max-width:850px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+}
+
+.highlight{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.highlight h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.curriculum{
+    background:#f8faf8;
+    padding:80px 20px;
+}
+
+.module{
+    max-width:1000px;
+    margin:20px auto;
+    background:white;
+    border-left:5px solid #2EAD33;
+    padding:25px;
+    border-radius:10px;
+}
+
+.module h3{
+    margin-bottom:10px;
+}
+
+.module ul{
+    padding-left:20px;
+}
+
+.module li{
+    margin-bottom:8px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:15px;
+    padding:25px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat{
+    text-align:center;
+    padding:30px;
+}
+
+.stat h2{
+    color:#2EAD33;
+    font-size:3rem;
+}
+
+.compare{
+    background:#f8f9fa;
+    padding:80px 20px;
+}
+
+.compare-box{
+    max-width:1000px;
+    margin:auto;
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#111;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#f5f5f5;
+    color:#666;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.6rem;
+    }
+}
+</style>
+</head>
+<link rel="stylesheet" href="common.css">
+<body>
+
+<div id="header"></div>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Master <span>React Development</span></h1>
+
+        <p>
+            Learn modern frontend development using React and build responsive,
+            fast, and scalable web applications. Master components, hooks,
+            routing, API integration, state management, and real-world projects.
+        </p>
+
+        <a href="#curriculum" class="btn">Explore Curriculum</a>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+    <h2 class="section-title">Why React?</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>⚡ Component Based</h3>
+            <p>Build reusable UI components for faster and maintainable development.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 High Performance</h3>
+            <p>Virtual DOM ensures efficient rendering and better user experiences.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Industry Standard</h3>
+            <p>Used by Meta, Netflix, Airbnb, Uber and thousands of modern companies.</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Responsive Applications</h3>
+            <p>Create mobile-friendly and highly interactive user interfaces.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="highlight">
+
+    <h2>Build Modern User Experiences</h2>
+
+    <p>
+        React is one of the most popular frontend frameworks for creating
+        dynamic, scalable and production-ready web applications.
+    </p>
+
+</section>
+
+<div class="container">
+
+    <h2 class="section-title">Skills You Will Learn</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>JSX & Components</h3>
+            <p>Build reusable React components.</p>
+        </div>
+
+        <div class="card">
+            <h3>State & Props</h3>
+            <p>Understand component communication and state management.</p>
+        </div>
+
+        <div class="card">
+            <h3>React Hooks</h3>
+            <p>Master useState, useEffect and custom hooks.</p>
+        </div>
+
+        <div class="card">
+            <h3>React Router</h3>
+            <p>Create Single Page Applications with routing.</p>
+        </div>
+
+        <div class="card">
+            <h3>API Integration</h3>
+            <p>Consume REST APIs using Fetch and Axios.</p>
+        </div>
+
+        <div class="card">
+            <h3>Deployment</h3>
+            <p>Deploy applications to GitHub Pages, Netlify and Vercel.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="curriculum" id="curriculum">
+
+<h2 class="section-title">Course Curriculum</h2>
+
+<div class="module">
+<h3>Module 1 – Modern JavaScript Essentials</h3>
+<ul>
+<li>ES6 Fundamentals</li>
+<li>Arrow Functions</li>
+<li>Destructuring</li>
+<li>Modules</li>
+<li>Async Programming</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 2 – React Fundamentals</h3>
+<ul>
+<li>React Architecture</li>
+<li>Project Setup</li>
+<li>JSX</li>
+<li>Components</li>
+<li>Props & State</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 3 – Event Handling & Forms</h3>
+<ul>
+<li>Event Handling</li>
+<li>Controlled Components</li>
+<li>Form Validation</li>
+<li>User Input Handling</li>
+<li>Dynamic Forms</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 4 – React Hooks</h3>
+<ul>
+<li>useState</li>
+<li>useEffect</li>
+<li>useRef</li>
+<li>useMemo</li>
+<li>Custom Hooks</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 5 – Routing</h3>
+<ul>
+<li>React Router</li>
+<li>Navigation</li>
+<li>Dynamic Routes</li>
+<li>Protected Routes</li>
+<li>Nested Routing</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 6 – API Integration</h3>
+<ul>
+<li>REST APIs</li>
+<li>Axios</li>
+<li>Fetch API</li>
+<li>Loading States</li>
+<li>Error Handling</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 7 – State Management</h3>
+<ul>
+<li>Context API</li>
+<li>Redux Fundamentals</li>
+<li>Redux Toolkit</li>
+<li>Global State</li>
+<li>Middleware</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 8 – Deployment</h3>
+<ul>
+<li>Production Builds</li>
+<li>GitHub Pages</li>
+<li>Netlify</li>
+<li>Vercel</li>
+<li>CI/CD Basics</li>
+</ul>
+</div>
+
+</section>
+
+<section class="compare">
+
+    <h2 class="section-title">React Advantages</h2>
+
+    <div class="compare-box">
+
+        <table>
+
+            <tr>
+                <th>Feature</th>
+                <th>React</th>
+            </tr>
+
+            <tr>
+                <td>Component Architecture</td>
+                <td>Excellent</td>
+            </tr>
+
+            <tr>
+                <td>Performance</td>
+                <td>Very High</td>
+            </tr>
+
+            <tr>
+                <td>Learning Curve</td>
+                <td>Moderate</td>
+            </tr>
+
+            <tr>
+                <td>Community Support</td>
+                <td>Massive</td>
+            </tr>
+
+            <tr>
+                <td>Industry Adoption</td>
+                <td>Very High</td>
+            </tr>
+
+            <tr>
+                <td>Mobile Development</td>
+                <td>React Native</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Hands-On Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>🛒 E-Commerce Store</h3>
+<p>Create a shopping platform with product catalog and cart functionality.</p>
+</div>
+
+<div class="project">
+<h3>📚 Learning Management System</h3>
+<p>Develop a modern online learning portal.</p>
+</div>
+
+<div class="project">
+<h3>📊 Analytics Dashboard</h3>
+<p>Build responsive dashboards using APIs and charts.</p>
+</div>
+
+<div class="project">
+<h3>🌤 Weather Application</h3>
+<p>Consume external APIs and display live data.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">Program Highlights</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>50+</h2>
+<p>Hands-On Exercises</p>
+</div>
+
+<div class="stat">
+<h2>10+</h2>
+<p>Real Projects</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Practical Learning</p>
+</div>
+
+<div class="stat">
+<h2>8 Weeks</h2>
+<p>Weekend Program</p>
+</div>
+
+</div>
+
+</div>
+
+<section class="highlight">
+
+    <h2>Become a Professional React Developer</h2>
+
+    <p>
+        Learn React from scratch and master components, hooks,
+        routing, state management, API integration and deployment
+        techniques used by modern software companies.
+    </p>
+
+    <a href="#" class="btn">Enroll Now</a>
+
+</section>
+
+<script src="js/common.js"></script>
+
+<footer>
+    © 2026 Academy CloudOne | React Development
+</footer>
+
+</body>
+</html>

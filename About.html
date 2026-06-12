@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trainer Credentials | Academy CloudOne</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body{
+        background:#ffffff;
+        color:#222;
+        line-height:1.7;
+    }
+
+    .container{
+        max-width:1200px;
+        margin:auto;
+        padding:60px 25px;
+    }
+
+    .hero{
+        text-align:center;
+        padding:80px 20px;
+        background:#f8f9fa;
+        border-radius:20px;
+        margin-bottom:50px;
+    }
+
+    .hero h1{
+        font-size:3rem;
+        margin-bottom:15px;
+        color:#111;
+    }
+
+    .hero h1 span{
+        color:#007BFF;
+    }
+
+    .hero p{
+        max-width:800px;
+        margin:auto;
+        font-size:1.15rem;
+        color:#555;
+    }
+
+    .stats{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:25px;
+        margin:50px 0;
+    }
+
+    .stat-card{
+        background:#fff;
+        padding:35px;
+        border:1px solid #e5e5e5;
+        border-radius:16px;
+        text-align:center;
+        transition:.3s;
+    }
+
+    .stat-card:hover{
+        transform:translateY(-5px);
+        box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .stat-number{
+        font-size:3rem;
+        font-weight:bold;
+        color:#000;
+    }
+
+    .stat-text{
+        margin-top:10px;
+        color:#666;
+    }
+
+    .section{
+        margin:70px 0;
+    }
+
+    .section h2{
+        font-size:2rem;
+        margin-bottom:20px;
+        color:#111;
+    }
+
+    .section p{
+        color:#555;
+        margin-bottom:15px;
+    }
+
+    .skills{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:15px;
+        margin-top:30px;
+    }
+
+    .skill{
+        background:#f7f7f7;
+        padding:18px;
+        border-radius:10px;
+        text-align:center;
+        font-weight:600;
+    }
+
+    .highlights{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+        margin-top:30px;
+    }
+
+    .highlight{
+        border-left:4px solid #000;
+        background:#fafafa;
+        padding:20px;
+        border-radius:8px;
+    }
+
+    .credentials{
+        overflow-x:auto;
+        margin-top:30px;
+    }
+
+    table{
+        width:100%;
+        border-collapse:collapse;
+        background:white;
+    }
+
+    th{
+        background:#111;
+        color:white;
+        padding:15px;
+        text-align:left;
+    }
+
+    td{
+        padding:15px;
+        border-bottom:1px solid #e5e5e5;
+    }
+
+    .cta{
+        text-align:center;
+        padding:70px 30px;
+        background:#111;
+        color:white;
+        border-radius:20px;
+        margin-top:60px;
+    }
+
+    .cta h2{
+        font-size:2.2rem;
+        margin-bottom:15px;
+    }
+
+    .cta p{
+        max-width:700px;
+        margin:auto;
+        color:#d9d9d9;
+    }
+
+    .btn{
+        display:inline-block;
+        margin-top:30px;
+        background:white;
+        color:black;
+        text-decoration:none;
+        padding:14px 35px;
+        border-radius:8px;
+        font-weight:bold;
+        transition:.3s;
+    }
+
+    .btn:hover{
+        transform:translateY(-3px);
+    }
+
+    footer{
+        text-align:center;
+        padding:30px;
+        color:#777;
+    }
+
+    @media(max-width:768px){
+        .hero h1{
+            font-size:2.2rem;
+        }
+
+        .stat-number{
+            font-size:2.2rem;
+        }
+    }
+</style>
+
+<link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<div class="container">
+
+    <section class="hero">
+        <h1>Meet Your <span>Trainer</span></h1>
+        <p>
+            Learn from an experienced software professional with a strong blend of
+            corporate expertise and practical training experience. Gain real-world
+            knowledge, hands-on skills, and industry insights that help you become
+            job-ready.
+        </p>
+    </section>
+
+    <section class="stats">
+
+        <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-text">Years in Corporate IT</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-number">4+</div>
+            <div class="stat-text">Years as Software Trainer</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-number">1000+</div>
+            <div class="stat-text">Hours of Training Delivered</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-number">500+</div>
+            <div class="stat-text">Students & Professionals Mentored</div>
+        </div>
+
+    </section>
+
+    <section class="section">
+        <h2>Corporate IT Experience</h2>
+
+        <p>
+            With over 10 years of experience in the software industry, the trainer
+            has worked across enterprise applications, automation frameworks,
+            cloud technologies, web development, and large-scale business systems.
+        </p>
+
+        <div class="skills">
+            <div class="skill">Java Development</div>
+            <div class="skill">Spring Boot</div>
+            <div class="skill">Microservices</div>
+            <div class="skill">React</div>
+            <div class="skill">AWS Cloud</div>
+            <div class="skill">Automation Testing</div>
+            <div class="skill">REST APIs</div>
+            <div class="skill">Oracle Database</div>
+            <div class="skill">CI/CD</div>
+            <div class="skill">Software Architecture</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Training & Mentorship Experience</h2>
+
+        <p>
+            For the past 4 years, students, fresh graduates, and working professionals
+            have been trained using an industry-focused approach that emphasizes
+            practical implementation over theoretical learning.
+        </p>
+
+        <div class="highlights">
+
+            <div class="highlight">
+                <h3>Industry-Oriented Learning</h3>
+                <p>Learn technologies the way they are used in real projects.</p>
+            </div>
+
+            <div class="highlight">
+                <h3>Hands-On Projects</h3>
+                <p>Build practical applications and gain implementation experience.</p>
+            </div>
+
+            <div class="highlight">
+                <h3>Interview Preparation</h3>
+                <p>Focused guidance for technical interviews and assessments.</p>
+            </div>
+
+            <div class="highlight">
+                <h3>Career Support</h3>
+                <p>Resume reviews, mentorship, and professional guidance.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Courses Delivered</h2>
+
+        <div class="skills">
+            <div class="skill">Java Full Stack Development</div>
+            <div class="skill">Spring Boot & Microservices</div>
+            <div class="skill">AWS Cloud Practitioner</div>
+            <div class="skill">React Development</div>
+            <div class="skill">Selenium Automation Testing</div>
+            <div class="skill">Playwright Automation</div>
+            <div class="skill">REST API Testing</div>
+            <div class="skill">Data Structures & Algorithms</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Credentials Snapshot</h2>
+
+        <div class="credentials">
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Details</th>
+                </tr>
+
+                <tr>
+                    <td>Corporate Experience</td>
+                    <td>10+ Years</td>
+                </tr>
+
+                <tr>
+                    <td>Training Experience</td>
+                    <td>4+ Years</td>
+                </tr>
+
+                <tr>
+                    <td>Training Approach</td>
+                    <td>Project-Based & Industry-Focused</td>
+                </tr>
+
+                <tr>
+                    <td>Primary Technologies</td>
+                    <td>Java, Spring Boot, React, AWS, Selenium, Playwright</td>
+                </tr>
+
+                <tr>
+                    <td>Audience</td>
+                    <td>Students, Graduates & Working Professionals</td>
+                </tr>
+
+            </table>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Learn from Real Industry Experience</h2>
+
+        <p>
+            At Academy CloudOne, every course is designed to bridge the gap between
+            academic concepts and real-world software development practices.
+            Gain practical skills, build confidence, and prepare for a successful
+            technology career.
+        </p>
+
+        <a href="/courses" class="btn">Explore Courses</a>
+    </section>
+
+</div>
+
+
+<footer>
+    © 2026 Academy CloudOne | Industry Experience • Practical Learning • Career Growth
+</footer>
+
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+anchor.addEventListener('click',function(e){
+e.preventDefault();
+document.querySelector(this.getAttribute('href'))
+.scrollIntoView({
+behavior:'smooth'
+});
+});
+});
+
+fetch('header.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('header').innerHTML = data;
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Java Design Patterns Mastery | CloudOne Academy</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#222;
+    line-height:1.7;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(135deg,#ffffff,#f7faf9);
+    padding:60px 20px;
+}
+
+.hero-content{
+    max-width:1000px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#2EAD33;
+}
+
+.hero p{
+    font-size:1.25rem;
+    color:#666;
+    max-width:850px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#2EAD33;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+.highlight{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.highlight h2{
+    margin-bottom:15px;
+}
+
+.curriculum{
+    background:#f8faf8;
+    padding:80px 20px;
+}
+
+.module{
+    max-width:1000px;
+    margin:20px auto;
+    background:white;
+    border-left:5px solid #2EAD33;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.04);
+}
+
+.module h3{
+    margin-bottom:10px;
+}
+
+.module ul{
+    padding-left:20px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat{
+    text-align:center;
+    padding:30px;
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:15px;
+}
+
+.stat h2{
+    color:#2EAD33;
+    font-size:3rem;
+}
+
+.badge{
+    display:inline-block;
+    background:#eaf8eb;
+    color:#2EAD33;
+    padding:8px 16px;
+    border-radius:30px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#f5f5f5;
+    color:#666;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+Advanced Java • System Design • Enterprise Architecture
+</div>
+
+<h1>Master <span>Java Design Patterns</span></h1>
+
+<p>
+Learn the most important Design Patterns used in enterprise Java applications.
+Master Creational, Structural and Behavioral Patterns with real-world coding examples,
+UML diagrams, Spring Framework integration and interview-focused case studies.
+</p>
+
+<a href="#curriculum" class="btn">Explore Curriculum</a>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Why Learn Design Patterns?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🏢 Enterprise Development</h3>
+<p>
+Design Patterns are widely used in large-scale enterprise applications and frameworks.
+</p>
+</div>
+
+<div class="card">
+<h3>💼 Interview Preparation</h3>
+<p>
+Frequently asked in Senior Developer, Lead Developer and Architect interviews.
+</p>
+</div>
+
+<div class="card">
+<h3>⚡ Better Code Quality</h3>
+<p>
+Write maintainable, scalable and reusable software solutions.
+</p>
+</div>
+
+<div class="card">
+<h3>🚀 Framework Understanding</h3>
+<p>
+Understand how Spring, Hibernate and Java APIs internally use patterns.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<section class="highlight">
+
+<h2>Think Like a Software Architect</h2>
+
+<p>
+Move beyond coding and learn proven solutions to recurring software design problems.
+</p>
+
+</section>
+
+<section class="curriculum" id="curriculum">
+
+<h2 class="section-title">Course Curriculum</h2>
+
+<div class="module">
+<h3>Module 1 – Object-Oriented Design Foundations</h3>
+<ul>
+<li>SOLID Principles</li>
+<li>DRY Principle</li>
+<li>KISS Principle</li>
+<li>Composition vs Inheritance</li>
+<li>Coupling & Cohesion</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 2 – Introduction to Design Patterns</h3>
+<ul>
+<li>Gang of Four (GoF)</li>
+<li>Pattern Classification</li>
+<li>Benefits & Limitations</li>
+<li>Pattern Identification</li>
+<li>Real-World Examples</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 3 – Creational Patterns</h3>
+<ul>
+<li>Singleton Pattern</li>
+<li>Factory Method Pattern</li>
+<li>Abstract Factory Pattern</li>
+<li>Builder Pattern</li>
+<li>Prototype Pattern</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 4 – Structural Patterns</h3>
+<ul>
+<li>Adapter Pattern</li>
+<li>Bridge Pattern</li>
+<li>Composite Pattern</li>
+<li>Decorator Pattern</li>
+<li>Facade Pattern</li>
+<li>Proxy Pattern</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 5 – Behavioral Patterns</h3>
+<ul>
+<li>Strategy Pattern</li>
+<li>Observer Pattern</li>
+<li>Command Pattern</li>
+<li>Template Method Pattern</li>
+<li>Chain of Responsibility</li>
+<li>State Pattern</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 6 – Enterprise Design Patterns</h3>
+<ul>
+<li>MVC Pattern</li>
+<li>DAO Pattern</li>
+<li>DTO Pattern</li>
+<li>Front Controller</li>
+<li>Service Locator</li>
+<li>Repository Pattern</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 7 – Design Patterns in Spring Framework</h3>
+<ul>
+<li>Singleton Bean Scope</li>
+<li>Dependency Injection</li>
+<li>Factory Beans</li>
+<li>Proxy-Based AOP</li>
+<li>Template Patterns</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 8 – Design Patterns in Hibernate</h3>
+<ul>
+<li>Session Factory</li>
+<li>DAO Integration</li>
+<li>Repository Pattern</li>
+<li>Persistence Layer Design</li>
+<li>Transaction Management</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 9 – Refactoring Legacy Code</h3>
+<ul>
+<li>Code Smells</li>
+<li>Anti-Patterns</li>
+<li>Pattern Selection</li>
+<li>Refactoring Techniques</li>
+<li>Best Practices</li>
+</ul>
+</div>
+
+<div class="module">
+<h3>Module 10 – Capstone Project</h3>
+<ul>
+<li>E-Commerce Architecture</li>
+<li>Payment Gateway Integration</li>
+<li>Notification Framework</li>
+<li>Microservices Design</li>
+<li>Pattern-Based Implementation</li>
+</ul>
+</div>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Hands-On Pattern Implementations</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🏦 Banking Application</h3>
+<p>
+Implement Factory, Strategy and Observer patterns.
+</p>
+</div>
+
+<div class="card">
+<h3>🛒 E-Commerce Platform</h3>
+<p>
+Use Builder, Decorator and Facade patterns.
+</p>
+</div>
+
+<div class="card">
+<h3>📱 Notification System</h3>
+<p>
+Build extensible communication modules using design patterns.
+</p>
+</div>
+
+<div class="card">
+<h3>☁ Enterprise Framework</h3>
+<p>
+Create scalable architecture using multiple GoF patterns.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2 class="section-title">Program Highlights</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>25+</h2>
+<p>Design Patterns Covered</p>
+</div>
+
+<div class="stat">
+<h2>15+</h2>
+<p>Enterprise Case Studies</p>
+</div>
+
+<div class="stat">
+<h2>10+</h2>
+<p>Hands-On Projects</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Code-Centric Learning</p>
+</div>
+
+</div>
+
+</div>
+
+<section class="highlight">
+
+<h2>Premium Career Add-ons</h2>
+
+<p>
+SOLID Principles • Low-Level Design • UML Modeling • System Design Basics •
+Spring Design Internals • Hibernate Architecture • Coding Interviews •
+Architect-Level Case Studies
+</p>
+
+</section>
+
+<section class="highlight">
+
+<h2>Become a Better Java Developer</h2>
+
+<p>
+Master enterprise-grade design patterns and learn how top software companies
+build scalable, maintainable and extensible applications.
+</p>
+
+<a href="#" class="btn">Enroll Now</a>
+
+</section>
+
+<footer>
+© 2026 CloudOne Academy | Java Design Patterns Mastery
+</footer>
+
+</body>
+</html>

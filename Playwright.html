@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playwright Automation Testing | Academy CloudOne</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#222;
+    line-height:1.7;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(135deg,#ffffff,#f7faf9);
+    padding:60px 20px;
+}
+
+.hero-content{
+    max-width:1000px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.hero span{
+    color:#2EAD33;
+}
+
+.hero p{
+    font-size:1.25rem;
+    color:#666;
+    max-width:850px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+}
+
+.highlight{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.highlight h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.curriculum{
+    background:#f8faf8;
+    padding:80px 20px;
+}
+
+.module{
+    max-width:1000px;
+    margin:20px auto;
+    background:white;
+    border-left:5px solid #2EAD33;
+    padding:25px;
+    border-radius:10px;
+}
+
+.module h3{
+    margin-bottom:10px;
+}
+
+.module ul{
+    padding-left:20px;
+}
+
+.module li{
+    margin-bottom:8px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:15px;
+    padding:25px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat{
+    text-align:center;
+    padding:30px;
+}
+
+.stat h2{
+    color:#2EAD33;
+    font-size:3rem;
+}
+
+.compare{
+    background:#f8f9fa;
+    padding:80px 20px;
+}
+
+.compare-box{
+    max-width:1000px;
+    margin:auto;
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#111;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#f5f5f5;
+    color:#666;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.6rem;
+    }
+}
+</style>
+<link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+
+<div id="header"></div>
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Master <span>Playwright Automation</span></h1>
+
+        <p>
+            Learn Microsoft's modern web automation framework and build
+            reliable, fast, and scalable automation tests for today's web applications.
+            Master Playwright using JavaScript, TypeScript, and real-world testing scenarios.
+        </p>
+
+        <a href="#curriculum" class="btn">Explore Curriculum</a>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+    <h2 class="section-title">Why Playwright?</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>⚡ Auto Waiting</h3>
+            <p>No more complicated explicit waits. Playwright intelligently waits for elements automatically.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Cross Browser Testing</h3>
+            <p>Run tests on Chromium, Firefox, and WebKit from a single framework.</p>
+        </div>
+
+        <div class="card">
+            <h3>📹 Built-In Tracing</h3>
+            <p>Capture screenshots, videos, logs and traces for easy debugging.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Parallel Execution</h3>
+            <p>Execute tests simultaneously and reduce execution time dramatically.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="highlight">
+
+    <h2>Modern Automation for Modern Applications</h2>
+
+    <p>
+        Playwright is rapidly becoming the preferred automation framework
+        for startups, product companies, and modern QA teams due to its
+        speed, reliability, and developer-friendly design.
+    </p>
+
+</section>
+
+<div class="container">
+
+    <h2 class="section-title">Skills You Will Learn</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Locators & Selectors</h3>
+            <p>Master role-based, text-based, CSS, XPath, and custom locators.</p>
+        </div>
+
+        <div class="card">
+            <h3>Assertions</h3>
+            <p>Validate UI behavior using Playwright's powerful assertion library.</p>
+        </div>
+
+        <div class="card">
+            <h3>Page Object Model</h3>
+            <p>Build maintainable enterprise-grade automation frameworks.</p>
+        </div>
+
+        <div class="card">
+            <h3>API Testing</h3>
+            <p>Perform REST API validation directly from Playwright.</p>
+        </div>
+
+        <div class="card">
+            <h3>Network Mocking</h3>
+            <p>Intercept and manipulate network traffic for advanced testing.</p>
+        </div>
+
+        <div class="card">
+            <h3>CI/CD Integration</h3>
+            <p>Integrate automation suites with GitHub Actions and Jenkins.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="curriculum" id="curriculum">
+
+    <h2 class="section-title">Course Curriculum</h2>
+
+    <div class="module">
+        <h3>Module 1 – Playwright Fundamentals</h3>
+        <ul>
+            <li>Playwright Architecture</li>
+            <li>Installation & Setup</li>
+            <li>Node.js Essentials</li>
+            <li>Project Structure</li>
+            <li>First Automation Script</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 2 – Locators & Web Elements</h3>
+        <ul>
+            <li>getByRole()</li>
+            <li>getByText()</li>
+            <li>getByLabel()</li>
+            <li>CSS & XPath</li>
+            <li>Best Locator Strategies</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 3 – Advanced Browser Automation</h3>
+        <ul>
+            <li>Frames & iFrames</li>
+            <li>Multi-Tab Handling</li>
+            <li>File Upload & Download</li>
+            <li>Alerts & Dialogs</li>
+            <li>Authentication Flows</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 4 – Assertions & Reporting</h3>
+        <ul>
+            <li>Playwright Assertions</li>
+            <li>HTML Reports</li>
+            <li>Screenshots</li>
+            <li>Videos</li>
+            <li>Trace Viewer</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 5 – Test Framework Design</h3>
+        <ul>
+            <li>Fixtures</li>
+            <li>Hooks</li>
+            <li>Page Object Model</li>
+            <li>Reusable Utilities</li>
+            <li>Environment Management</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 6 – API Testing with Playwright</h3>
+        <ul>
+            <li>GET, POST, PUT, DELETE</li>
+            <li>Request Context</li>
+            <li>Response Validation</li>
+            <li>Authentication Tokens</li>
+            <li>End-to-End Test Flows</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 7 – CI/CD & Parallel Execution</h3>
+        <ul>
+            <li>GitHub Actions</li>
+            <li>Jenkins Integration</li>
+            <li>Parallel Testing</li>
+            <li>Cross Browser Execution</li>
+            <li>Cloud Execution Strategies</li>
+        </ul>
+    </div>
+
+</section>
+
+<section class="compare">
+
+    <h2 class="section-title">Playwright Advantages</h2>
+
+    <div class="compare-box">
+
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Playwright</th>
+            </tr>
+
+            <tr>
+                <td>Auto Waiting</td>
+                <td>Built-In</td>
+            </tr>
+
+            <tr>
+                <td>Parallel Execution</td>
+                <td>Native Support</td>
+            </tr>
+
+            <tr>
+                <td>Trace Viewer</td>
+                <td>Built-In</td>
+            </tr>
+
+            <tr>
+                <td>API Testing</td>
+                <td>Native Support</td>
+            </tr>
+
+            <tr>
+                <td>Cross Browser Testing</td>
+                <td>Chromium, Firefox, WebKit</td>
+            </tr>
+
+            <tr>
+                <td>Execution Speed</td>
+                <td>Very Fast</td>
+            </tr>
+        </table>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+    <h2 class="section-title">Hands-On Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>🛒 E-Commerce Automation</h3>
+            <p>Automate complete product search, cart and checkout workflows.</p>
+        </div>
+
+        <div class="project">
+            <h3>🏦 Banking Application Testing</h3>
+            <p>Validate account operations, transfers and transaction histories.</p>
+        </div>
+
+        <div class="project">
+            <h3>🌐 REST API Automation</h3>
+            <p>Create end-to-end UI + API integrated automation suites.</p>
+        </div>
+
+        <div class="project">
+            <h3>📊 Enterprise Framework</h3>
+            <p>Build a scalable Playwright Page Object Model framework.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container">
+
+    <h2 class="section-title">Program Highlights</h2>
+
+    <div class="stats">
+
+        <div class="stat">
+            <h2>40+</h2>
+            <p>Hands-On Exercises</p>
+        </div>
+
+        <div class="stat">
+            <h2>10+</h2>
+            <p>Automation Projects</p>
+        </div>
+
+        <div class="stat">
+            <h2>100%</h2>
+            <p>Practical Learning</p>
+        </div>
+
+        <div class="stat">
+            <h2>6 Weeks</h2>
+            <p>Weekend Program</p>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="highlight">
+
+    <h2>Become a Next-Generation Automation Engineer</h2>
+
+    <p>
+        Learn Playwright from scratch and master UI testing, API testing,
+        framework development, CI/CD integration, reporting, and modern
+        automation best practices used by leading technology companies.
+    </p>
+
+    <a href="#" class="btn">Enroll Now</a>
+
+</section>
+
+<script src="js/common.js"></script>
+
+<footer>
+    © 2026 Academy CloudOne | Playwright Automation Testing
+</footer>
+
+</body>
+</html>

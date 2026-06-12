@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<title>Cloud Computing & AWS Hands-On Training | Academy CloudOne</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.cta-buttons{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.enroll-btn{
+    background:#111;
+    color:white;
+}
+
+.social-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:15px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.social-btn:hover{
+    transform:translateY(-3px);
+}
+
+.linkedin-btn{
+    background:#0077B5;
+    color:white;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+    color:white;
+}
+
+.social-btn i{
+    font-size:1.2rem;
+}
+
+body{
+    background:#ffffff;
+    color:#222;
+    line-height:1.7;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#f8fafc,#ffffff);
+}
+
+.hero-content{
+    max-width:1000px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.hero span{
+    color:#FF9900;
+}
+
+.hero p{
+    font-size:1.25rem;
+    color:#555;
+    max-width:850px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+}
+
+.highlight{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.highlight h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.curriculum{
+    background:#f8f9fb;
+    padding:80px 20px;
+}
+
+.module{
+    max-width:1000px;
+    margin:20px auto;
+    background:white;
+    border-left:5px solid #FF9900;
+    padding:25px;
+    border-radius:10px;
+}
+
+.module h3{
+    margin-bottom:10px;
+}
+
+.module ul{
+    padding-left:20px;
+}
+
+.module li{
+    margin-bottom:8px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat{
+    text-align:center;
+    padding:30px;
+}
+
+.stat h2{
+    font-size:3rem;
+    color:#FF9900;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:white;
+    border-radius:15px;
+    border:1px solid #eee;
+    padding:25px;
+}
+
+.project h3{
+    margin-bottom:15px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#f5f5f5;
+    color:#666;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.6rem;
+    }
+}
+</style>
+</head>
+<link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+<div id="header"></div>
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Cloud Computing & <span>AWS Practical Training</span></h1>
+
+        <p>
+            Learn Cloud Computing from first principles and gain practical,
+            hands-on AWS experience by building real cloud infrastructure.
+            Perfect for students, developers, QA engineers, system administrators,
+            and aspiring cloud professionals.
+        </p>
+
+        <a href="#curriculum" class="btn">View Curriculum</a>
+        <a href="index.html" class="btn">
+           <i class="fa-solid fa-house"></i>
+             Back to Dashboard
+        </a>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+    <h2 class="section-title">Why Learn Cloud Computing?</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>☁ Understand Modern Infrastructure</h3>
+            <p>Learn how today's applications are deployed, scaled, monitored and secured in the cloud.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 High Industry Demand</h3>
+            <p>Cloud skills are among the most sought-after capabilities across software and IT roles.</p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Cost Optimization</h3>
+            <p>Understand how organizations reduce infrastructure costs using cloud-native services.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Security & Reliability</h3>
+            <p>Learn industry-standard practices for building secure and highly available systems.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="highlight">
+
+    <h2>Learn by Doing — Not Just Watching</h2>
+
+    <p>
+        Every concept is demonstrated live using the AWS Console.
+        Students create resources, configure services, troubleshoot issues,
+        and build cloud solutions from scratch.
+    </p>
+
+</section>
+
+<section class="container">
+
+    <h2 class="section-title">Core Cloud Concepts Covered</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>IaaS, PaaS & SaaS</h3>
+            <p>Understand cloud service models and their real-world use cases.</p>
+        </div>
+
+        <div class="card">
+            <h3>Regions & Availability Zones</h3>
+            <p>Learn global AWS infrastructure architecture.</p>
+        </div>
+
+        <div class="card">
+            <h3>Networking Fundamentals</h3>
+            <p>IP Addressing, CIDR, Subnets, Routing and Security Groups.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cloud Security</h3>
+            <p>IAM, MFA, Encryption, Shared Responsibility Model.</p>
+        </div>
+
+        <div class="card">
+            <h3>Scalability & Elasticity</h3>
+            <p>Build systems that adapt to changing workloads.</p>
+        </div>
+
+        <div class="card">
+            <h3>High Availability</h3>
+            <p>Design resilient applications using cloud best practices.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="curriculum" id="curriculum">
+
+    <h2 class="section-title">AWS Practical Curriculum</h2>
+
+    <div class="module">
+        <h3>Module 1 – Cloud Fundamentals</h3>
+        <ul>
+            <li>What is Cloud Computing?</li>
+            <li>On-Premise vs Cloud</li>
+            <li>IaaS, PaaS and SaaS</li>
+            <li>Public, Private and Hybrid Cloud</li>
+            <li>AWS Global Infrastructure</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 2 – AWS Identity & Security</h3>
+        <ul>
+            <li>AWS Account Setup</li>
+            <li>IAM Users and Groups</li>
+            <li>IAM Roles</li>
+            <li>MFA Configuration</li>
+            <li>Security Best Practices</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 3 – Compute Services</h3>
+        <ul>
+            <li>EC2 Instances</li>
+            <li>AMI Concepts</li>
+            <li>Instance Types</li>
+            <li>EBS Volumes</li>
+            <li>SSH Access & Management</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 4 – AWS Networking</h3>
+        <ul>
+            <li>Virtual Private Cloud (VPC)</li>
+            <li>Subnets</li>
+            <li>Route Tables</li>
+            <li>Internet Gateway</li>
+            <li>Security Groups & NACLs</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 5 – Storage Services</h3>
+        <ul>
+            <li>S3 Buckets</li>
+            <li>Storage Classes</li>
+            <li>Versioning</li>
+            <li>Lifecycle Policies</li>
+            <li>Static Website Hosting</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 6 – Databases</h3>
+        <ul>
+            <li>RDS Overview</li>
+            <li>MySQL on AWS</li>
+            <li>Backup & Recovery</li>
+            <li>Database Connectivity</li>
+            <li>Monitoring</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 7 – Monitoring & Operations</h3>
+        <ul>
+            <li>CloudWatch</li>
+            <li>CloudTrail</li>
+            <li>AWS Budgets</li>
+            <li>Cost Management</li>
+            <li>Resource Monitoring</li>
+        </ul>
+    </div>
+
+    <div class="module">
+        <h3>Module 8 – Application Deployment</h3>
+        <ul>
+            <li>Deploying Static Websites</li>
+            <li>Deploying Web Applications</li>
+            <li>Domain & DNS Concepts</li>
+            <li>Route 53 Basics</li>
+            <li>HTTPS & SSL Concepts</li>
+        </ul>
+    </div>
+
+</section>
+
+<div class="container">
+
+    <h2 class="section-title">Hands-On Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>🌐 Static Website Hosting</h3>
+            <p>Host a live website using S3 with public access and custom configurations.</p>
+        </div>
+
+        <div class="project">
+            <h3>🖥 Launch a Cloud Server</h3>
+            <p>Create and manage an EC2 server from scratch.</p>
+        </div>
+
+        <div class="project">
+            <h3>🔐 Secure Infrastructure Setup</h3>
+            <p>Configure IAM users, security groups and networking controls.</p>
+        </div>
+
+        <div class="project">
+            <h3>🌎 Build a Custom VPC</h3>
+            <p>Create subnets, route tables and internet connectivity manually.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container">
+
+    <h2 class="section-title">Program Highlights</h2>
+
+    <div class="stats">
+
+        <div class="stat">
+            <h2>25+</h2>
+            <p>AWS Hands-On Labs</p>
+        </div>
+
+        <div class="stat">
+            <h2>10+</h2>
+            <p>Real Cloud Exercises</p>
+        </div>
+
+        <div class="stat">
+            <h2>100%</h2>
+            <p>Practical Demonstrations</p>
+        </div>
+
+        <div class="stat">
+            <h2>6 Weeks</h2>
+            <p>Weekend Training Program</p>
+        </div>
+
+    </div>
+
+</div>
+
+<section class="highlight">
+
+    <h2>Build Real Cloud Skills</h2>
+
+    <p>
+        Move beyond theory and gain confidence working with AWS services,
+        cloud networking, security, compute, storage, monitoring, and
+        application deployment through guided hands-on exercises.
+    </p>
+
+<div class="cta-buttons">
+
+    <a href="#" class="btn enroll-btn">
+        <i class="fa-solid fa-graduation-cap"></i>
+        Enroll Now
+    </a>
+
+    <a href="https://linkedin.com/in/shivjindal38"
+       target="_blank"
+       class="social-btn linkedin-btn">
+
+        <i class="fa-brands fa-linkedin"></i>
+        LinkedIn
+    </a>
+
+    <a href="https://wa.me/919873068166"
+       target="_blank"
+       class="social-btn whatsapp-btn">
+
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+    </a>
+
+</div>
+</section>
+
+<footer>
+    © 2026 Academy CloudOne | Cloud Computing & AWS Practical Training
+</footer>
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+anchor.addEventListener('click',function(e){
+e.preventDefault();
+document.querySelector(this.getAttribute('href'))
+.scrollIntoView({
+behavior:'smooth'
+});
+});
+});
+
+fetch('header.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('header').innerHTML = data;
+});
+
+</script>
+</body>
+</html>
