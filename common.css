@@ -13,30 +13,31 @@ background:linear-gradient(135deg,#ffffff,#dcdcdc);
 /* =========================
    GLASS NAVBAR
    ========================= */
-
 nav{
-    position:fixed;
-    top:12px;
-    left:50%;
-    transform:translateX(-50%);
-    width:min(1200px,95%);
-    z-index:9999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 
-    background:rgba(255,255,255,.18);
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
+    background: #777BB4;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
-    border:1px solid rgba(255,255,255,.35);
-    border-radius:18px;
+    border: 10px solid rgba(42, 7, 28, 0.35);
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
 
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    /* Optional */
+    border-radius: 0;
 }
 
 .nav-container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:14px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo{
