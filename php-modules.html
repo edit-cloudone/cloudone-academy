@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>PHP Development Mastery | CloudOne Academy</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Segoe UI, sans-serif
+        }
+
+        body {
+            background: #f5f7ff;
+            color: #222;
+            line-height: 1.6
+        }
+
+        .hero {
+            padding: 90px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #f7f7ff, #fff)
+        }
+
+        .hero h1 {
+            font-size: 3.5rem
+        }
+
+        .hero span,
+        .stat h2 {
+            color: #777BB4
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 35px
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px
+        }
+
+        .card,
+        .module {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .08)
+        }
+
+        .card {
+            padding: 25px
+        }
+
+        .module {
+            margin-bottom: 15px;
+            border-left: 5px solid #777BB4;
+            overflow: hidden
+        }
+
+        .module-header {
+            padding: 18px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer
+        }
+
+        .module-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s ease;
+            background: #fafbff
+        }
+
+        .module-content ul {
+            padding: 20px 40px
+        }
+
+        .module.active .module-content {
+            max-height: 800px
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px
+        }
+
+        .stat {
+            text-align: center;
+            padding: 20px
+        }
+
+        .cta {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #777BB4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f1f1
+        }
+    </style>
+</head>
+
+<body>
+    <section class='hero'>
+        <h1>PHP <span>Development Mastery</span></h1>
+        <p>Complete industry-oriented PHP curriculum with projects, MySQL, APIs and MVC.</p>
+    </section>
+    <section class='section'>
+        <h2 class='section-title'>Why Learn PHP?</h2>
+        <div class='grid'>
+            <div class='card'>
+                <h3>Web Development</h3>
+                <p>Build dynamic websites.</p>
+            </div>
+            <div class='card'>
+                <h3>MySQL Integration</h3>
+                <p>Create database-driven applications.</p>
+            </div>
+            <div class='card'>
+                <h3>REST APIs</h3>
+                <p>Develop backend services.</p>
+            </div>
+            <div class='card'>
+                <h3>Career Ready</h3>
+                <p>Projects and deployment experience.</p>
+            </div>
+        </div>
+    </section>
+    <section class='section'>
+        <h2 class='section-title'>Course Curriculum</h2>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 1: PHP Fundamentals</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>Introduction to PHP</li>
+                    <li>History of PHP</li>
+                    <li>Installing XAMPP</li>
+                    <li>Installing WAMP</li>
+                    <li>VS Code Setup</li>
+                    <li>PHP Tags</li>
+                    <li>Variables</li>
+                    <li>Constants</li>
+                    <li>Data Types</li>
+                    <li>Type Casting</li>
+                    <li>Operators</li>
+                    <li>Strings</li>
+                    <li>String Functions</li>
+                    <li>Comments</li>
+                    <li>PHP Configuration</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 2: Control Statements</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>if</li>
+                    <li>if-else</li>
+                    <li>elseif</li>
+                    <li>switch</li>
+                    <li>match</li>
+                    <li>for</li>
+                    <li>while</li>
+                    <li>do-while</li>
+                    <li>foreach</li>
+                    <li>break</li>
+                    <li>continue</li>
+                    <li>nested loops</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 3: Functions</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>Function Syntax</li>
+                    <li>Parameters</li>
+                    <li>Return Values</li>
+                    <li>Default Arguments</li>
+                    <li>Variadic Functions</li>
+                    <li>Anonymous Functions</li>
+                    <li>Arrow Functions</li>
+                    <li>Recursion</li>
+                    <li>Variable Scope</li>
+                    <li>Pass by Reference</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 4: Arrays</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>Indexed Arrays</li>
+                    <li>Associative Arrays</li>
+                    <li>Multidimensional Arrays</li>
+                    <li>count()</li>
+                    <li>sort()</li>
+                    <li>asort()</li>
+                    <li>ksort()</li>
+                    <li>array_merge()</li>
+                    <li>array_push()</li>
+                    <li>array_pop()</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 5: Object Oriented PHP</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>Classes</li>
+                    <li>Objects</li>
+                    <li>Constructors</li>
+                    <li>Destructors</li>
+                    <li>Inheritance</li>
+                    <li>Polymorphism</li>
+                    <li>Encapsulation</li>
+                    <li>Abstraction</li>
+                    <li>Interfaces</li>
+                    <li>Traits</li>
+                    <li>Namespaces</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 6: Exception Handling</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>try-catch</li>
+                    <li>finally</li>
+                    <li>throw</li>
+                    <li>Custom Exceptions</li>
+                    <li>Error Handling</li>
+                    <li>Logging</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 7: Forms Processing</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>HTML Forms</li>
+                    <li>GET</li>
+                    <li>POST</li>
+                    <li>Validation</li>
+                    <li>Sanitization</li>
+                    <li>CSRF Basics</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 8: PHP Superglobals</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>$_GET</li>
+                    <li>$_POST</li>
+                    <li>$_REQUEST</li>
+                    <li>$_SERVER</li>
+                    <li>$_SESSION</li>
+                    <li>$_COOKIE</li>
+                    <li>$_FILES</li>
+                    <li>$_ENV</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 9: Session & Cookie Management</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>Sessions</li>
+                    <li>Session Lifecycle</li>
+                    <li>Session Security</li>
+                    <li>Cookies</li>
+                    <li>Authentication</li>
+                    <li>Remember Me</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 10: File Handling</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>fopen</li>
+                    <li>fread</li>
+                    <li>fwrite</li>
+                    <li>CSV Processing</li>
+                    <li>JSON Files</li>
+                    <li>Directory Handling</li>
+                    <li>File Uploads</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 11: Database Programming with MySQL</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>MySQL Basics</li>
+                    <li>mysqli</li>
+                    <li>PDO</li>
+                    <li>CRUD</li>
+                    <li>Prepared Statements</li>
+                    <li>Transactions</li>
+                    <li>Joins</li>
+                    <li>Indexes</li>
+                    <li>Stored Procedures</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 12: PHP & SQL Integration Project</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>User Registration</li>
+                    <li>Login</li>
+                    <li>Password Hashing</li>
+                    <li>Profile Management</li>
+                    <li>Dashboard</li>
+                    <li>Role Based Access</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 13: REST API Development</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>REST Principles</li>
+                    <li>JSON</li>
+                    <li>HTTP Methods</li>
+                    <li>Status Codes</li>
+                    <li>Authentication</li>
+                    <li>JWT</li>
+                    <li>Postman Testing</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 14: Composer & Dependency Management</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>Composer Install</li>
+                    <li>Packages</li>
+                    <li>Autoloading</li>
+                    <li>Versioning</li>
+                    <li>Third-party Libraries</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 15: MVC Architecture</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>Models</li>
+                    <li>Views</li>
+                    <li>Controllers</li>
+                    <li>Routing</li>
+                    <li>Template Engines</li>
+                    <li>Mini MVC Project</li>
+                </ul>
+            </div>
+        </div>
+        <div class='module'>
+            <div class='module-header'>
+                <h3>Module 16: Capstone Project</h3><span>▼</span>
+            </div>
+            <div class='module-content'>
+                <ul>
+                    <li>Student Portal</li>
+                    <li>Course Enrollment</li>
+                    <li>Ecommerce Backend</li>
+                    <li>REST API</li>
+                    <li>Deployment</li>
+                    <li>Project Presentation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class='section'>
+        <h2 class='section-title'>Course Highlights</h2>
+        <div class='stats'>
+            <div class='stat'>
+                <h2>60+</h2>
+                <p>Exercises</p>
+            </div>
+            <div class='stat'>
+                <h2>15+</h2>
+                <p>Mini Projects</p>
+            </div>
+            <div class='stat'>
+                <h2>4</h2>
+                <p>Capstones</p>
+            </div>
+            <div class='stat'>
+                <h2>8 Weeks</h2>
+                <p>Weekend Program</p>
+            </div>
+        </div>
+    </section>
+    <section class='section'>
+        <h2 class='section-title'>Frequently Asked Questions</h2>
+        <div class='card'>
+            <h3>Do I need prior programming knowledge?</h3>
+            <p>No. Fundamentals are covered.</p>
+        </div><br>
+        <div class='card'>
+            <h3>Will projects be included?</h3>
+            <p>Yes, multiple hands-on projects and a capstone.</p>
+        </div>
+    </section>
+    <section class='cta'>
+        <h2>Become a Professional PHP Developer</h2>
+        <p>Master PHP, MySQL, REST APIs and MVC Architecture.</p><a href='#' class='btn'>Enroll Now</a>
+    </section>
+    <div id="footer"></div>
+    <script src="js/common.js"></script>
+    <script>
+        document.querySelectorAll('.module-header').forEach(h => {
+            h.addEventListener('click', () => {
+                const m = h.parentElement;
+                document.querySelectorAll('.module').forEach(x => { if (x !== m) x.classList.remove('active') });
+                m.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

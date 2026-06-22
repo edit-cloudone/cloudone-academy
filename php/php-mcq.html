@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHP MCQ Practice Portal</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f5f7ff;
+color:#222;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+background:linear-gradient(135deg,#f7f7ff,#ffffff);
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero span{
+color:#777BB4;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:30px;
+}
+
+.score-panel{
+position:sticky;
+top:10px;
+background:white;
+padding:20px;
+border-radius:12px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.score{
+font-size:2rem;
+font-weight:bold;
+color:#777BB4;
+}
+
+.btn{
+padding:10px 18px;
+border:none;
+background:#777BB4;
+color:white;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+margin-right:10px;
+}
+
+.question{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-radius:12px;
+border-left:5px solid #777BB4;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.option{
+margin:10px 0;
+}
+
+.answer{
+display:none;
+margin-top:15px;
+font-weight:bold;
+color:#2e7d32;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<h1>100 <span>PHP MCQs</span></h1>
+<p>Practice PHP Interview Questions</p>
+</section>
+
+<div class="container">
+
+<div class="score-panel">
+
+<h2>Current Score</h2>
+
+<div class="score" id="score">
+0 / 5
+</div>
+
+<button class="btn" onclick="calculateScore()">
+Calculate Score
+</button>
+
+<button class="btn" onclick="resetQuiz()">
+Reset Quiz
+</button>
+
+</div>
+
+<div class="question">
+
+<h3>1. PHP stands for?</h3>
+
+<div class="option">
+<input type="radio" name="q1">
+Personal Home Page
+</div>
+
+<div class="option">
+<input type="radio" name="q1" data-correct="true">
+Hypertext Preprocessor
+</div>
+
+<div class="option">
+<input type="radio" name="q1">
+Programming Home Page
+</div>
+
+<button class="btn" onclick="toggleAnswer(this)">
+Show Answer
+</button>
+
+<div class="answer">
+Answer: Hypertext Preprocessor
+</div>
+
+</div>
+
+<div class="question">
+
+<h3>2. PHP variables begin with?</h3>
+
+<div class="option">
+<input type="radio" name="q2">
+#
+</div>
+
+<div class="option">
+<input type="radio" name="q2">
+@
+</div>
+
+<div class="option">
+<input type="radio" name="q2" data-correct="true">
+$
+</div>
+
+<button class="btn" onclick="toggleAnswer(this)">
+Show Answer
+</button>
+
+<div class="answer">
+Answer: $
+</div>
+
+</div>
+
+<div class="question">
+
+<h3>3. Which function checks variable existence?</h3>
+
+<div class="option">
+<input type="radio" name="q3">
+exists()
+</div>
+
+<div class="option">
+<input type="radio" name="q3" data-correct="true">
+isset()
+</div>
+
+<div class="option">
+<input type="radio" name="q3">
+check()
+</div>
+
+<button class="btn" onclick="toggleAnswer(this)">
+Show Answer
+</button>
+
+<div class="answer">
+Answer: isset()
+</div>
+
+</div>
+
+<div class="question">
+
+<h3>4. Which superglobal stores POST data?</h3>
+
+<div class="option">
+<input type="radio" name="q4">
+$_GET
+</div>
+
+<div class="option">
+<input type="radio" name="q4" data-correct="true">
+$_POST
+</div>
+
+<div class="option">
+<input type="radio" name="q4">
+$_SERVER
+</div>
+
+<button class="btn" onclick="toggleAnswer(this)">
+Show Answer
+</button>
+
+<div class="answer">
+Answer: $_POST
+</div>
+
+</div>
+
+<div class="question">
+
+<h3>5. Which function decodes JSON?</h3>
+
+<div class="option">
+<input type="radio" name="q5">
+json_encode()
+</div>
+
+<div class="option">
+<input type="radio" name="q5" data-correct="true">
+json_decode()
+</div>
+
+<div class="option">
+<input type="radio" name="q5">
+parse_json()
+</div>
+
+<button class="btn" onclick="toggleAnswer(this)">
+Show Answer
+</button>
+
+<div class="answer">
+Answer: json_decode()
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function toggleAnswer(btn){
+
+const answer = btn.nextElementSibling;
+
+if(answer.style.display==="block"){
+answer.style.display="none";
+btn.innerHTML="Show Answer";
+}
+else{
+answer.style.display="block";
+btn.innerHTML="Hide Answer";
+}
+
+}
+
+function calculateScore(){
+
+let score = document.querySelectorAll(
+'input[data-correct="true"]:checked'
+).length;
+
+document.getElementById("score").innerHTML =
+score + " / 5";
+
+}
+
+function resetQuiz(){
+
+document.querySelectorAll(
+'input[type="radio"]'
+).forEach(r=>r.checked=false);
+
+document.querySelectorAll(
+'.answer'
+).forEach(a=>a.style.display='none');
+
+document.querySelectorAll(
+'.question button'
+).forEach(
+b=>b.innerHTML='Show Answer'
+);
+
+document.getElementById("score").innerHTML =
+"0 / 5";
+
+}
+
+</script>
+
+</body>
+</html>
