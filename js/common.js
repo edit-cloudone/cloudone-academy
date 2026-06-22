@@ -35,7 +35,23 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-});
+    //load Footer
+
+    const footer = document.getElementById('footer');
+    if (footer) {
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                footer.innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Footer load failed:', error);
+            });
+    }
+
+ });
+
+
 
 // Mobile Menu Toggle
 function toggleMenu() {

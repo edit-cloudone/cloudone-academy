@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <title>Cloud Computing & AWS Hands-On Training | Academy CloudOne</title>
 
 <style>
@@ -13,49 +11,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     padding:0;
     box-sizing:border-box;
     font-family:'Segoe UI',sans-serif;
-}
-
-.cta-buttons{
-    margin-top:40px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.enroll-btn{
-    background:#111;
-    color:white;
-}
-
-.social-btn{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:15px 25px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
-}
-
-.social-btn:hover{
-    transform:translateY(-3px);
-}
-
-.linkedin-btn{
-    background:#0077B5;
-    color:white;
-}
-
-.whatsapp-btn{
-    background:#25D366;
-    color:white;
-}
-
-.social-btn i{
-    font-size:1.2rem;
 }
 
 body{
@@ -233,7 +188,6 @@ footer{
     }
 }
 </style>
-</head>
 <link rel="stylesheet" href="common.css">
 </head>
 <body>
@@ -508,53 +462,11 @@ footer{
         application deployment through guided hands-on exercises.
     </p>
 
-<div class="cta-buttons">
+    <a href="#" class="btn enroll-btn">Enroll Now</a>
 
-    <a href="#" class="btn enroll-btn">
-        <i class="fa-solid fa-graduation-cap"></i>
-        Enroll Now
-    </a>
-
-    <a href="https://linkedin.com/in/shivjindal38"
-       target="_blank"
-       class="social-btn linkedin-btn">
-
-        <i class="fa-brands fa-linkedin"></i>
-        LinkedIn
-    </a>
-
-    <a href="https://wa.me/919873068166"
-       target="_blank"
-       class="social-btn whatsapp-btn">
-
-        <i class="fa-brands fa-whatsapp"></i>
-        WhatsApp
-    </a>
-
-</div>
 </section>
 
-<footer>
-    © 2026 Academy CloudOne | Cloud Computing & AWS Practical Training
-</footer>
-<script>
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-anchor.addEventListener('click',function(e){
-e.preventDefault();
-document.querySelector(this.getAttribute('href'))
-.scrollIntoView({
-behavior:'smooth'
-});
-});
-});
-
-fetch('header.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('header').innerHTML = data;
-});
-
-</script>
+<div id="footer"></div>
+<script src="js/common.js"></script>
 </body>
 </html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Full Stack Development | CloudOne Academy</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif
+        }
+
+        body {
+            background: #fff;
+            color: #222;
+            line-height: 1.7
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #f8fafc, #fff)
+        }
+
+        .hero h1 {
+            font-size: 4rem
+        }
+
+        .hero span {
+            color: #f97316
+        }
+
+        .hero p {
+            max-width: 900px;
+            margin: 20px auto
+        }
+
+        /**modules */
+
+        .module {
+            margin-bottom: 15px;
+            border-left: 5px solid #777BB4;
+            overflow: hidden
+        }
+
+        .module-header {
+            padding: 18px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer
+        }
+
+        .module-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s ease;
+            background: #fafbff
+        }
+
+        .module-content ul {
+            padding: 20px 40px
+        }
+
+        .module.active .module-content {
+            max-height: 800px
+        }
+
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #111;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 10px
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 80px 20px
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 50px
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px
+        }
+
+        .card,
+        .module,
+        .project {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            padding: 25px
+        }
+
+        .highlight {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px
+        }
+
+        .module {
+            border-left: 5px solid #f97316;
+            margin-bottom: 20px
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #f5f5f5
+        }
+    </style>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <section class="hero">
+        <div>
+            <h1>Java <span>Full Stack Development</span></h1>
+            <p>Master Java, Spring Boot, React, REST APIs, SQL, AWS, Git and Microservices through project-based
+                learning.</p>
+            <a href="#curriculum" class="btn">View Curriculum</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Why Learn Full Stack Development?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>HTML, CSS, JavaScript and React.</p>
+            </div>
+            <div class="card">
+                <h3>Backend Development</h3>
+                <p>Java, Spring and Spring Boot.</p>
+            </div>
+            <div class="card">
+                <h3>Database Design</h3>
+                <p>Oracle, MySQL and SQL.</p>
+            </div>
+            <div class="card">
+                <h3>Cloud Deployment</h3>
+                <p>AWS and DevOps practices.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="highlight">
+        <h2>Become a Job Ready Developer</h2>
+        <p>Build enterprise-grade applications from scratch and gain real-world experience.</p>
+    </section>
+<section id="curriculum" class="section curriculum">
+
+<h2 class="section-title">Complete Curriculum</h2>
+
+<!-- Module 1 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 1 - Java Fundamentals</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>Java Architecture & JVM</li>
+            <li>JDK, JRE, JVM</li>
+            <li>Variables & Data Types</li>
+            <li>Operators</li>
+            <li>Control Statements</li>
+            <li>Loops</li>
+            <li>Arrays</li>
+            <li>Methods</li>
+            <li>Command Line Arguments</li>
+            <li>Hands-on Coding Exercises</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Module 2 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 2 - Object Oriented Programming</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>Classes & Objects</li>
+            <li>Constructors</li>
+            <li>Inheritance</li>
+            <li>Polymorphism</li>
+            <li>Abstraction</li>
+            <li>Encapsulation</li>
+            <li>Static Keyword</li>
+            <li>Final Keyword</li>
+            <li>Packages</li>
+            <li>Access Modifiers</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Module 3 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 3 - Advanced Java</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>Exception Handling</li>
+            <li>Custom Exceptions</li>
+            <li>String Handling</li>
+            <li>Wrapper Classes</li>
+            <li>File Handling</li>
+            <li>Serialization</li>
+            <li>Java 8 Features</li>
+            <li>Lambda Expressions</li>
+            <li>Functional Interfaces</li>
+            <li>Stream API</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Module 4 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 4 - Collections Framework</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>List Interface</li>
+            <li>ArrayList</li>
+            <li>LinkedList</li>
+            <li>Vector</li>
+            <li>Set Interface</li>
+            <li>HashSet</li>
+            <li>TreeSet</li>
+            <li>HashMap</li>
+            <li>TreeMap</li>
+            <li>Comparator & Comparable</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Module 5 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 5 - Multithreading</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>Thread Lifecycle</li>
+            <li>Creating Threads</li>
+            <li>Runnable Interface</li>
+            <li>Synchronization</li>
+            <li>Deadlocks</li>
+            <li>Thread Pools</li>
+            <li>Executor Framework</li>
+            <li>Callable & Future</li>
+            <li>Concurrent Collections</li>
+            <li>Producer Consumer Problem</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Module 6 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 6 - SQL & Database Design</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>Database Fundamentals</li>
+            <li>ER Diagrams</li>
+            <li>Normalization</li>
+            <li>DDL Commands</li>
+            <li>DML Commands</li>
+            <li>DCL & TCL Commands</li>
+            <li>Joins</li>
+            <li>Subqueries</li>
+            <li>Functions</li>
+            <li>Stored Procedures</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Module 7 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 7 - JDBC</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>JDBC Architecture</li>
+            <li>Drivers</li>
+            <li>Connection Management</li>
+            <li>Statement Interface</li>
+            <li>PreparedStatement</li>
+            <li>CallableStatement</li>
+            <li>ResultSet</li>
+            <li>Transactions</li>
+            <li>Batch Processing</li>
+            <li>CRUD Operations</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Module 8 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 8 - HTML5</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>HTML Document Structure</li>
+            <li>Semantic Tags</li>
+            <li>Forms & Validation</li>
+            <li>Tables</li>
+            <li>Lists</li>
+            <li>Audio & Video</li>
+            <li>Canvas API</li>
+            <li>SVG Graphics</li>
+            <li>SEO Basics</li>
+            <li>Accessibility</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Module 9 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 9 - CSS3</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>Selectors</li>
+            <li>Box Model</li>
+            <li>Positioning</li>
+            <li>Flexbox</li>
+            <li>CSS Grid</li>
+            <li>Transitions</li>
+            <li>Animations</li>
+            <li>Media Queries</li>
+            <li>Responsive Design</li>
+            <li>Modern UI Layouts</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Module 10 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 10 - JavaScript Fundamentals</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>Variables & Data Types</li>
+            <li>Operators</li>
+            <li>Functions</li>
+            <li>Arrays</li>
+            <li>Objects</li>
+            <li>DOM Manipulation</li>
+            <li>Events</li>
+            <li>ES6 Features</li>
+            <li>Modules</li>
+            <li>Error Handling</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Module 11 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 11 - Advanced JavaScript</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>Closures</li>
+            <li>Hoisting</li>
+            <li>Callbacks</li>
+            <li>Promises</li>
+            <li>Async/Await</li>
+            <li>Fetch API</li>
+            <li>AJAX</li>
+            <li>Local Storage</li>
+            <li>Session Storage</li>
+            <li>Event Loop</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Module 12 -->
+<div class="module">
+    <div class="module-header">
+        <h3>Module 12 - Bootstrap</h3>
+        <span>+</span>
+    </div>
+    <div class="module-content">
+        <ul>
+            <li>Grid System</li>
+            <li>Containers</li>
+            <li>Cards</li>
+            <li>Forms</li>
+            <li>Navbar</li>
+            <li>Carousel</li>
+            <li>Modals</li>
+            <li>Utilities</li>
+            <li>Responsive Components</li>
+            <li>Landing Page Project</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Continue same structure for Modules 13-24 -->
+
+<!-- Module 13 --> React Fundamentals
+<!-- Module 14 --> React Advanced & Hooks
+<!-- Module 15 --> Redux & State Management
+<!-- Module 16 --> Spring Core
+<!-- Module 17 --> Spring MVC
+<!-- Module 18 --> Spring Boot
+<!-- Module 19 --> REST API Development
+<!-- Module 20 --> Hibernate & JPA
+<!-- Module 21 --> Spring Security & JWT
+<!-- Module 22 --> Microservices Architecture
+<!-- Module 23 --> DevOps, Docker, Git & AWS
+<!-- Module 24 --> Capstone Project & Placement Preparation
+
+</section>
+
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid">
+            <div class="project">
+                <h3>E-Commerce Platform</h3>
+            </div>
+            <div class="project">
+                <h3>Employee Management System</h3>
+            </div>
+            <div class="project">
+                <h3>Student Portal</h3>
+            </div>
+            <div class="project">
+                <h3>Banking Application</h3>
+            </div>
+            <div class="project">
+                <h3>Microservices Suite</h3>
+            </div>
+            <div class="project">
+                <h3>Cloud Deployment Project</h3>
+            </div>
+        </div>
+    </div>
+
+    <section class="highlight">
+        <h2>Career Support</h2>
+        <p>Resume reviews, mock interviews, LinkedIn optimization and placement guidance.</p>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="js/common.js"></script>
+    <script>
+    document.querySelectorAll('.module-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('span');
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.textContent = '+';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.textContent = '−';
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

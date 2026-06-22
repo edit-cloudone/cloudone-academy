@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PHP MCQ Portal</title>
+<style>
+body{font-family:Segoe UI,sans-serif;margin:0;background:#f5f7ff}
+header{background:#777BB4;color:#fff;padding:20px;text-align:center}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;padding:15px;background:#fff;position:sticky;top:0}
+.tabs button{padding:8px 12px;border:none;background:#e9e9ff;cursor:pointer;border-radius:6px}
+#progressWrap{background:#ddd;height:20px;margin:10px}
+#progress{background:#777BB4;height:100%;width:0%}
+.question{background:#fff;margin:15px;padding:15px;border-radius:8px}
+.answer{display:none;color:green;font-weight:bold}
+.score{padding:15px;font-size:20px}
+</style>
+</head>
+<body>
+<header><h1>CloudOne Academy - PHP MCQ Portal</h1></header>
+<div class="tabs" id="tabs"></div>
+<div class="score">Score: <span id="score">0</span></div>
+<div id="progressWrap"><div id="progress"></div></div>
+<div id="questions"></div>
+<script>
+const modules=["Fundamentals","Control","Functions","Arrays","OOP","Exceptions","Forms","Superglobals","Sessions","Files","MySQL","Project","REST","Composer","MVC","Capstone"];
+const questions=[];
+for(let i=1;i<=100;i++){
+ questions.push({
+  module:modules[Math.floor((i-1)/7)%modules.length],
+  q:"Sample PHP Question "+i,
+  options:["Option A","Option B","Option C","Option D"],
+  answer:1
+ });
+}
+const tabs=document.getElementById('tabs');
+tabs.innerHTML='<button onclick="renderAll()">All</button><button onclick="randomQuiz()">Random 10</button>'+modules.map(m=>`<button onclick="filterModule('${m}')">${m}</button>`).join('');
+function render(list){
+ const qd=document.getElementById('questions');
+ qd.innerHTML='';
+ list.forEach((q,idx)=>{
+ qd.innerHTML+=`<div class="question">
+ <h3>${q.q}</h3>
+ ${q.options.map((o,i)=>`<div><label><input type="radio" name="q${idx}" value="${i}" onchange="updateProgress()"> ${o}</label></div>`).join('')}
+ <button onclick="this.nextElementSibling.style.display='block'">Show Answer</button>
+ <div class="answer">Correct Answer: ${q.options[q.answer]}</div>
+ </div>`;
+ });
+}
+function renderAll(){render(questions)}
+function filterModule(m){render(questions.filter(q=>q.module===m))}
+function randomQuiz(){
+ let arr=[...questions].sort(()=>Math.random()-0.5).slice(0,10);
+ render(arr);
+}
+function updateProgress(){
+ let checked=document.querySelectorAll('input[type=radio]:checked').length;
+ let total=document.querySelectorAll('.question').length;
+ document.getElementById('progress').style.width=((checked/Math.max(total,1))*100)+'%';
+}
+renderAll();
+</script>
+</body>
+</html>
